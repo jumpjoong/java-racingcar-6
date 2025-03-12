@@ -11,9 +11,13 @@ public class InputCarName {
     public ValidCar inputCarName() {
         System.out.println("경주할 자동차 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분)");
         String input = Console.readLine();
-        String[] Carnames = input.split(",");
-        for (String carname : Carnames) {
-            carList.add(carname.trim());
+        String[] carName = input.split(",");
+
+        for (String car : carName) {
+            car = car.trim();
+            if (!car.isEmpty()) {
+                carList.add(car);
+            }
         }
         return new ValidCar(carList);
     }

@@ -6,6 +6,6 @@ public class Run {
     InputCarName test = new InputCarName();
 
     public void run() {
-    test.inputCarName();
+        test.inputCarName();
     }
 }
