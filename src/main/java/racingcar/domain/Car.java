@@ -17,7 +17,7 @@ public class Car {
         }
     }
 
-    public String print () {
+    public String carNamePrint () {
         return name + " : " + "-".repeat(position);
     }
 
