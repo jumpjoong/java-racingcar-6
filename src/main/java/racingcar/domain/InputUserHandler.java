@@ -5,7 +5,7 @@ import camp.nextstep.edu.missionutils.Console;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InputCarName {
+public class InputUserHandler {
     List<String> carList= new ArrayList<>();
 
     public ValidCar inputCarName() {
@@ -20,5 +20,11 @@ public class InputCarName {
             }
         }
         return new ValidCar(carList);
+    }
+
+    public int inputTryCount() {
+        System.out.println("시도할 회수는 몇 회인가요?");
+        String input = Console.readLine().trim();
+        return Integer.parseInt(input);
     }
 }
