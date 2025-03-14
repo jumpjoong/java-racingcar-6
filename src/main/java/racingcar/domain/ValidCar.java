@@ -23,6 +23,7 @@ public class ValidCar {
     //이름 5자 이하 검증 로직
     private boolean validCarNameLength(List<String> carList) {
         int maxNameLength = 5;
+
         for (String car : carList) {
             if (car.length() > maxNameLength) {
                 return false;
@@ -40,7 +41,7 @@ public class ValidCar {
         return true;
     }
 
-    public List<String> getCarList() { // 🚀 검증된 자동차 목록을 컨트롤러에서 사용할 수 있도록 반환
+    public List<String> getCarList() {
         return carList;
     }
 }

@@ -2,17 +2,17 @@ package racingcar.domain;
 
 public class Car {
     private final String name;
-    private int position;
+    private int position = 0;
 
     public Car(String name) {
         this.name = name;
-        position = 0;
     }
 
     public void move () {
         int randomNumber = new RandomNumber().randomNumber();
+        int overMove = 4;
 
-        if(randomNumber > 4) {
+        if(randomNumber > overMove) {
             position++;
         }
     }
