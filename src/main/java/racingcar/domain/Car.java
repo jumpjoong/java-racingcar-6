@@ -21,8 +21,9 @@ public class Car {
         return name + " : " + "-".repeat(position);
     }
 
-    public String winCar() {
-        return "최종 우승자 : " + name;
+
+    public String getName () {
+        return name;
     }
 
     public int getPosition() {
